@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+  <linearGradient id="g" x1="0" x2="1">
+    <stop offset="0" stop-color="#24392f"/>
+    <stop offset="1" stop-color="#7b6b45"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#g)"/>
+<circle cx="1220" cy="230" r="180" fill="#b9923f" opacity=".18"/>
+<path d="M0 710 C300 620 520 760 800 680 C1100 600 1280 720 1600 610 L1600 900 L0 900 Z" fill="#15261f" opacity=".9"/>
+<text x="800" y="450" text-anchor="middle" font-family="Arial" font-size="42" fill="#fff" opacity=".55">Replace with approved AGWC hero photograph</text>
+</svg>

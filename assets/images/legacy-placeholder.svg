@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
+<rect width="900" height="1100" fill="#d8cdb8"/>
+<circle cx="450" cy="360" r="170" fill="#8d7f68"/>
+<path d="M170 1100 C170 720 730 720 730 1100 Z" fill="#5f6a5a"/>
+<text x="450" y="940" text-anchor="middle" font-family="Arial" font-size="34" fill="#2d2a25">Replace with approved legacy photograph</text>
+</svg>

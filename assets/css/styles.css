@@ -392,99 +392,172 @@ h3 {
 
 .programme-card p { color: var(--muted); }
 
-/* =====================================
-   Mission Photograph
-===================================== */
 
-.mission-photo{
-
-    display:block;
-
-    width:100%;
-
-    max-width:320px;
-
-    margin:25px auto;
-
-    border-radius:18px;
-
-    object-fit:cover;
-
-    box-shadow:0 18px 40px rgba(0,0,0,.25);
-
-    border:5px solid #ffffff;
-
-}
+```css
+/* =========================================
+   Legacy Section
+========================================= */
 
 .legacy-section {
-  background: var(--green);
-  color: white;
+    background: var(--green);
+    color: white;
 }
 
 .legacy-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 40px;
-  align-items: stretch;
-}
-
-.legacy-card,
-.legacy-quote {
-  position: relative;
-  border-radius: var(--radius);
-  overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.7fr 0.8fr;
+    gap: 30px;
+    align-items: stretch;
 }
 
 .legacy-card {
-  padding: 52px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.15);
+    position: relative;
+    padding: 44px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
-.legacy-card p {
-  color: rgba(255,255,255,0.82);
-  max-width: 760px;
+.legacy-profile {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 38px;
+    align-items: center;
 }
 
-.legacy-card .section-kicker { color: var(--olive-soft); }
+.legacy-photo-wrap {
+    text-align: center;
+}
+
+.legacy-photo {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center 28%;
+    border-radius: 16px;
+    border: 4px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.34);
+}
+
+.legacy-name {
+    margin: 18px 0 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: white;
+}
+
+.legacy-role {
+    margin: 2px 0 0;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.legacy-text {
+    position: relative;
+}
+
+.legacy-text p {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.legacy-text .section-kicker {
+    color: var(--olive-soft);
+}
 
 .legacy-watermark {
-  position: absolute;
-  right: -20px;
-  bottom: -25px;
-  width: 260px;
-  opacity: 0.08;
-  pointer-events: none;
+    position: absolute;
+    right: -20px;
+    bottom: -30px;
+    width: 260px;
+    opacity: 0.06;
+    pointer-events: none;
 }
 
 .legacy-quote {
-  min-height: 100%;
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: var(--cream);
-  color: var(--ink);
+    min-height: 100%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: var(--radius);
+    background: var(--cream);
+    color: var(--ink);
 }
 
 .quote-mark {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 7rem;
-  line-height: 0.5;
-  color: var(--bronze);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 7rem;
+    line-height: 0.5;
+    color: var(--bronze);
 }
 
 .legacy-quote p {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2.2rem;
-  line-height: 1.15;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.15rem;
+    line-height: 1.17;
 }
 
 .legacy-quote small {
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
 }
+
+/* Tablet and mobile layout */
+
+@media (max-width: 1000px) {
+
+    .legacy-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .legacy-profile {
+        grid-template-columns: 220px 1fr;
+    }
+
+    .legacy-photo {
+        height: 310px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .legacy-card,
+    .legacy-quote {
+        padding: 30px 22px;
+    }
+
+    .legacy-profile {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .legacy-photo-wrap {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .legacy-photo {
+        height: 360px;
+    }
+
+    .legacy-text {
+        text-align: center;
+    }
+
+    .legacy-quote p {
+        font-size: 1.8rem;
+    }
+}
+```
+
 
 .impact-grid {
   display: grid;
